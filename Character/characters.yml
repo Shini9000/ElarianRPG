@@ -1,0 +1,63 @@
+PlayableRaces:
+  Common:
+    Orc:
+      - Orc
+      - Halforc
+        - Human x Orc
+    Elf:
+      - Halfelf
+        - Human x Elf
+      - Woodelf
+      - Swampelf
+        - Typically Drow (Darkelf)
+      - Hillelf
+        - Typically Highelf or Lightelf
+    Human:
+      - Human
+      - Halforc
+        - Human x Orc
+      - Halfelf
+        - Human x Elf
+      - Halfdwarf
+        - Human x Dwarf
+    Dwarf:
+      - Dwarf
+      - Hilldwarf
+      - Forestdwarf
+      - Citydwarf
+      - Halfdwarf
+        - Human x Dwarf
+  Uncommon:
+    Lizardfolk:
+    Tiefling:
+    Beastfolk:
+    Halfling:
+  Rare:
+    Dragonborn:
+    Serpentfolk:
+
+Stats:
+  Name: ''
+  Race: ''
+  Class: ''
+  Diety: ''
+  
+  Health: 10
+  Mana: 10 
+  Gold: 0
+  Experience: 0
+  Armorclass: 0
+  Spellslot: 0
+  Healthpots: 0
+  WeaponDamage: 0
+  Bagspace: 0
+
+  level: 1
+  Acrobatics: 0
+  Agility: 0 
+  Charisma: 0 
+  Dexterity: 0 
+  Intelligence: 0 
+  Perception: 0 
+  Strength: 0 
+  Wisdom: 0

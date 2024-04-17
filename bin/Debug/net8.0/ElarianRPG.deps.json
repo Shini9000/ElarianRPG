@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ElarianRPG/1.0.0": {
+        "runtime": {
+          "ElarianRPG.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ElarianRPG/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+/home/shini/Documents/C#/ElarianRPG/bin/Debug/net8.0/ElarianRPG
+/home/shini/Documents/C#/ElarianRPG/bin/Debug/net8.0/ElarianRPG.deps.json
+/home/shini/Documents/C#/ElarianRPG/bin/Debug/net8.0/ElarianRPG.runtimeconfig.json
+/home/shini/Documents/C#/ElarianRPG/bin/Debug/net8.0/ElarianRPG.dll
+/home/shini/Documents/C#/ElarianRPG/bin/Debug/net8.0/ElarianRPG.pdb
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.GeneratedMSBuildEditorConfig.editorconfig
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.AssemblyInfoInputs.cache
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.AssemblyInfo.cs
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.csproj.CoreCompileInputs.cache
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.dll
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/refint/ElarianRPG.dll
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.pdb
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ElarianRPG.genruntimeconfig.cache
+/home/shini/Documents/C#/ElarianRPG/obj/Debug/net8.0/ref/ElarianRPG.dll
