@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using Microsoft.Win32.SafeHandles;
 
 namespace ElenarRPG
 {
@@ -10,6 +11,7 @@ namespace ElenarRPG
         private static bool characterCreated = false;
         private static string[] c_Classes = {"Warrior", "Hunter", "Thief", "Mage"};
         private static string[] c_Races = {"Orc", "Elf", "Human", "Dwarf"};
+        static bool inTutorial = false;
 
 
         static void Main(string[] args)
@@ -42,11 +44,11 @@ namespace ElenarRPG
             {
                 case "H":
                     Debug.Print("H");
-                    HelpTutorial();
+                    HelpTutorial(true);
                     break;
                 case "Help":
                     Debug.Print("Help");
-                    HelpTutorial();
+                    HelpTutorial(true);
                     break;
                 case "Continue":
                     Debug.Print("Continue");
@@ -293,18 +295,68 @@ namespace ElenarRPG
         }
 
 
-        static void HelpTutorial()
+        static void HelpTutorial(bool inTutorial)
         {
             Console.Clear();
-            Console.WriteLine("|TUTORIAL|\n" +
+            Console.WriteLine("|TUTORIAL|\n----------\n" +
             "Key\tInfo\n" +
-            " *\tThis is not part of the story but hints, tutorial or advice. \n" +
-            " ||\tText in this box are to emphasis what the game is telling you |Location|, |NPC| etc. \n" +
-            " -\tItems or text marked here represents what you have done \"- Picked up Iron sword\"\n" +
-            " []\tText in is the games way to display buttons [Y]es, [A]ttack etc. \n\tUse either whats [in here] or the entire word!\n" +
-            "Press ENTER to continue...");
-            
-            Console.ReadKey();
+            " *\tThis is not part of the story but hints, tutorial or advice. \n\n" +
+            " ||\tText in this box are to emphasis what the game is telling you |Location|, |NPC| etc. \n\n" +
+            " -\tItems or text marked here represents what you have done \"- Picked up Iron sword\"\n\n" +
+            " []\tText in is the games way to display buttons [Y]es, [A]ttack etc. \n\tUse either whats [in here] or the entire word!\n\n" +
+            "[1]. Classes\n" + "[2]. Combat\n" + "[3]. Levelling up\n" + "[4]. Story\n" + "[5]. Economy\n" + "[6]. Exit tutorial");
+
+            // inputs for class
+            var userInput_Raw = Console.ReadLine();
+            int userInput = Convert.ToInt16(userInput_Raw);
+            while (inTutorial == true){
+                switch (userInput)
+                {
+                    case 1:
+                        Console.WriteLine("Classes");
+                        Console.WriteLine("Each class has its own unique playstyle. A Warrior is different from a Mage, a Mage is different from a hunter etc.\n" +
+                                        "Each class has a subclass that you can build into. Classes come with stats as a baseline meaning you build ontop of what you chose.\n[TABLE]\n\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n" +
+                                        "Warrior > Barbarian | Soldier | Knight | Beserker\n");
+                        Console.WriteLine("Press ANY key to continue...");
+                        Console.ReadKey();
+                        inTutorial = false;
+                        HelpTutorial(true);
+                        break;
+                    case 2:
+                        Console.WriteLine("Combat");
+                        continue;
+                    case 3:
+                        Console.WriteLine("Levelling up");
+                        continue;
+                    case 4:
+                        Console.WriteLine("Story");
+                        continue;
+                    case 5:
+                        Console.WriteLine("Economy");
+                        continue;
+                    case 6:
+                        Console.WriteLine("Exiting...");
+                        inTutorial = false;
+                        continue;
+                    default:
+                        Console.WriteLine("Int - Not a valid option!");
+                        break;   
+                }      
+            }
 
         }
     }
